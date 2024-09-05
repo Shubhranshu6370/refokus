@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Product from "./Product";
 import { motion } from "framer-motion";
-import arqitel from "../assets/arqitel.mp4"
-import ttr from "../assets/ttr.mp4"
-import yir from "../assets/yir.mp4"
-import yahoo from "../assets/yahoo.mp4"
+import arqitel from "../assets/arqitel.mp4";
+import ttr from "../assets/ttr.mp4";
+import yir from "../assets/yir.mp4";
+import yahoo from "../assets/yahoo.mp4";
 function Products() {
   var products = [
     {
@@ -48,13 +48,12 @@ function Products() {
           initial={{ y: pos, x: "-50%" }}
           animate={{ y: pos + `rem` }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
-          className="window absolute w-[32rem] h-[23rem] bg-white left-[45%]  overflow-hidden"
+          className="window absolute w-[32rem] h-[23rem] bg-white left-[45%] overflow-hidden"
         >
           <motion.div
             animate={{ y: -pos + `rem` }}
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full "
-
           >
             <video
               className="absolute object-cover rounded-4xl"
@@ -69,7 +68,7 @@ function Products() {
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full bg-sky-200"
           >
-              <video
+            <video
               className="absolute object-cover rounded-4xl"
               autoPlay
               muted
@@ -82,7 +81,7 @@ function Products() {
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full bg-sky-300"
           >
-             <video
+            <video
               className="absolute object-cover rounded-4xl"
               autoPlay
               muted
@@ -95,7 +94,7 @@ function Products() {
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full bg-sky-400"
           >
-             <video
+            <video
               className="absolute object-cover rounded-4xl"
               autoPlay
               muted
